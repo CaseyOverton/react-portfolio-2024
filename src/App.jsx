@@ -1,6 +1,6 @@
 import TechStack from '../src/components/techStack.jsx'
 import Header from '../src/components/header.jsx'
-import React, { useEffect } from 'react'
+import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 
 export function EmblaCarousel() {
