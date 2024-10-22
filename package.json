@@ -1,6 +1,7 @@
 {
   "name": "react-essentials-start",
   "version": "0.0.0",
+  "homepage": "https://caseyoverton.github.io/react-portfolio-2024/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
