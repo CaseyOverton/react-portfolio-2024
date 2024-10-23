@@ -112,7 +112,7 @@ main h2 {
   text-transform: uppercase;
   margin-bottom: 2.5rem;
 
-  a {
+  :is(a) {
     text-decoration: none
   }
 }
