@@ -1,6 +1,5 @@
 {
   "name": "react-portfolio-2024",
-  "base": "/react-portfolio-2024/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
