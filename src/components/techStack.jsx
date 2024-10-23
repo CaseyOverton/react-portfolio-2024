@@ -1,10 +1,10 @@
-function TechStack(props) {
+function TechStack({title, description, url}) {
     return (
       <li>
-          <h3>{props.title}</h3>
-          <p>{props.description}</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
           <button>  
-            <a href={props.url} target="_blank">Learn More</a>
+            <a href={url} target="_blank">Learn More</a>
           </button>
       </li>
     )
