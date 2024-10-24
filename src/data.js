@@ -49,3 +49,18 @@ export const USER_DATA = {
     lastName: 'Overton', 
     title: 'Software Developer', 
 };
+
+export const TAB_CONTENT = {
+    Resume: {
+        title: 'Resume',
+        description: 'Click Here to open my resume.'
+    },
+    Contact: {
+        title: 'Contact',
+        description:'Email: Overtonc1@gmail.com, Linkedin: https://www.linkedin.com/in/casey-overton-3584151b1/'
+    },
+    About: {
+        title: 'About Me',
+        description: '2012-2017 East Carolina University,  2020-2021 University of Chapel Hill for Full Stack Development.',
+    },
+}

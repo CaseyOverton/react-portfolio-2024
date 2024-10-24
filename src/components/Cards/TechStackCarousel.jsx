@@ -1,6 +1,6 @@
 import useEmblaCarousel from 'embla-carousel-react'
-import { TECH_STACK_DATA, EXPERIENCE_DATA } from '../data.js'
-import TechStack from './TechStack.jsx'
+import { TECH_STACK_DATA, EXPERIENCE_DATA } from '../../data.js'
+import TechStack from '../TechStack/TechStack.jsx'
 
 export default function TechStackCarousel() {
     const [emblaRef] = useEmblaCarousel({ loop: true })

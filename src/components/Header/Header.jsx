@@ -1,5 +1,6 @@
-import imgSrc from '../../src/assets/Casey-Overton.jpeg'
-import { USER_DATA } from '../data.js'
+import imgSrc from '../../assets/Casey-Overton.jpeg'
+import { USER_DATA } from '../../data.js'
+import './Header.css'
 
 function Header() {
     return (
