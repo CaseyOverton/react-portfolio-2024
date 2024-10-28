@@ -5,6 +5,7 @@ import TabButton from './components/TabButton/TabButton.jsx'
 import { TAB_CONTENT } from './data.js'
 
 function App() {
+
   const [selectedTopic, setSelectedTopic] = useState('Resume')
   function handleSelect(selectedTab) {
     setSelectedTopic(selectedTab);

@@ -54,7 +54,25 @@
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
-  
+
+    &.embla__prev, &.embla__next {
+      background: linear-gradient(#b990ed, #3c1775);
+      display: inline;
+      padding: .5rem;
+      border-radius: 2px;
+      letter-spacing: 0.05rem;
+      border:0;
+
+      &.embla__prev {
+        margin-right: 1px;
+      }
+      &.embla__prev:hover, &.embla__next:hover {
+        background: linear-gradient(#b990ed, #260e49);
+      }
+      &.embla__prev:active, &.embla__next:active {
+        background: linear-gradient(#b990ed, #16082b);
+      }
+  }
     :is(a) {
       text-decoration: none
     }
