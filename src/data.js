@@ -64,3 +64,17 @@ export const TAB_CONTENT = {
         description: '2012-2017 East Carolina University,  2020-2021 University of Chapel Hill for Full Stack Development.',
     },
 }
+export const MODAL_CONTENT = {
+    Lead: {
+        title: 'Lead Frontend Engineer',
+        description: 'Worked with BlueAcorn iCi'
+    },
+    Contact: {
+        title: 'Contact',
+        description:'Email: Overtonc1@gmail.com, Linkedin: https://www.linkedin.com/in/casey-overton-3584151b1/'
+    },
+    About: {
+        title: 'About Me',
+        description: '2012-2017 East Carolina University,  2020-2021 University of Chapel Hill for Full Stack Development.',
+    },
+}
