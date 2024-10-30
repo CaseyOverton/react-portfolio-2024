@@ -5,7 +5,7 @@ import './Header.css'
 function Header() {
     return (
       <header>
-        <img src={imgSrc} alt="Stylized atom" />
+        <img src={imgSrc} alt="Picture of Casey Overton" />
         <h1>{USER_DATA.firstName} {USER_DATA.lastName} Portfolio</h1>
         <p>
           Frontend/Fullstack Developer with 4+ years of professional software experience in agile development environment.

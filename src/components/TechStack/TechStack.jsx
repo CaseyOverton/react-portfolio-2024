@@ -1,17 +1,41 @@
-// import Example from '../Modal/Modal.jsx'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import '../Modal/modal.css'
 
-function TechStack({title, description, modal, modalLink}) {
+// {title, description, modal, modalLink1, modalLink1Title, modalLink2, modalLink2Title}
+
+function TechStack({title, description, modal, modalLink1, modalLink1Title, modalLink2, modalLink2Title}) {
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
   function handleClick() {
     setModalShow(true);
     setModalContent({title});
-      console.log({modalLink})
+  }
+
+  function handleModalUrl() {
+    if (!!modalLink1 && !!modalLink2) {
+      return(
+        <ul>
+          <li>
+            <a href={modalLink1}>{modalLink1Title}</a>
+          </li>
+          <li>
+            <a href={modalLink2}>{modalLink2Title}</a>
+          </li>
+        </ul> 
+      )
+    }
+    if (!!modalLink1) {
+      return(
+        <ul>
+          <li>
+            <a href={modalLink1}>{modalLink1Title}</a>
+          </li>
+        </ul>
+    )}
+    return('')
   }
 
   function modalContents () {
@@ -24,7 +48,7 @@ function TechStack({title, description, modal, modalLink}) {
         </Modal.Header>
         <Modal.Body>
           <h3>{modal}</h3>
-          <a href={modalLink}>Destructuring Props Demonstration</a>
+          {handleModalUrl()}
         </Modal.Body>
       </div>
     )
