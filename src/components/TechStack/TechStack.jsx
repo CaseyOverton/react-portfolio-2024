@@ -3,17 +3,35 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import '../Modal/modal.css'
-function TechStack({title, description, props}) {
+
+function TechStack({title, description, modal, modalLink}) {
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('');
 
   function handleClick() {
     setModalShow(true);
     setModalContent({title});
-    console.log({title})
+      console.log({modalLink})
   }
 
-  function Example(props){
+  function modalContents () {
+    return (
+      <div id="modal-content">
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            <h2>{title}</h2>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h3>{modal}</h3>
+          <a href={modalLink}>Destructuring Props Demonstration</a>
+        </Modal.Body>
+      </div>
+    )
+  }
+   
+  
+  function BS_Modal(props){
     return (
       <Modal
       {...props}
@@ -23,19 +41,7 @@ function TechStack({title, description, props}) {
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4> </h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
+     {modalContents()}
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>
       </Modal.Footer>
@@ -45,17 +51,14 @@ function TechStack({title, description, props}) {
 
     return (
       <li>
-          <h3>{title}</h3>
-          <p>{description}</p>
-      <Button variant="primary" onClick={handleClick}>
-        Learn More!
-      </Button>
-
-      <Example
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-        
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <Button variant="primary" onClick={handleClick}>
+          Learn More!
+        </Button>
+        <BS_Modal
+          show={modalShow}
+          onHide={() => setModalShow(false)}/>
       </li>
     )
   }

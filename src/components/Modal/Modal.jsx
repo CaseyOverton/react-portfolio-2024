@@ -2,6 +2,14 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import './modal.css'
 
+let modalContent = (
+  <div id="modal-content">
+    <h2>
+      {TAB_CONTENT[selectedTopic].title}
+    </h2>
+    <p>  {TAB_CONTENT[selectedTopic].description}</p>
+  </div>
+)
 
 function Example(props,title) {
   return (

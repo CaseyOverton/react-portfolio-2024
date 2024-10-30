@@ -8,8 +8,7 @@ html {
   font-family: "Quicksand", sans-serif;
   line-height: 1.5;
   color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
-
+  background: radial-gradient(#030106, #20043d) !important;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +21,6 @@ main {
   width: 90%;
   max-width: 50rem;
   margin: auto;
-  background: radial-gradient(#280a48, #20043d);
 }
 
 main h2 {
