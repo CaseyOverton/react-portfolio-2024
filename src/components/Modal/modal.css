@@ -144,6 +144,11 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
+
+  >ul {
+    list-style-type: none;
+    padding-right: 2.5rem;
+  }
 }
 .modal-footer {
   padding: 15px;

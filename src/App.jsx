@@ -5,7 +5,20 @@ import TabButton from './components/TabButton/TabButton.jsx'
 import { TAB_CONTENT } from './data.js'
 
 function App() {
-
+  function isURL() {
+    if(TAB_CONTENT[selectedTopic].url) {
+      return (
+        <a href={TAB_CONTENT[selectedTopic].url}>{TAB_CONTENT[selectedTopic].urlTitle}</a>
+      )
+    }
+  }
+  function isDescription2() {
+    if(TAB_CONTENT[selectedTopic].description2) {
+      return (
+        <p>{TAB_CONTENT[selectedTopic].description2}</p>
+      )
+    }
+  }
   const [selectedTopic, setSelectedTopic] = useState('Resume')
   function handleSelect(selectedTab) {
     setSelectedTopic(selectedTab);
@@ -15,7 +28,8 @@ function App() {
       <h2>
         {TAB_CONTENT[selectedTopic].title}
       </h2>
-      <p>  {TAB_CONTENT[selectedTopic].description}</p>
+      <p> {TAB_CONTENT[selectedTopic].description1}</p>
+        {isURL()}
     </div>
   )
 

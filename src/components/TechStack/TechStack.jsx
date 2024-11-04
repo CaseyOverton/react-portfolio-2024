@@ -3,8 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import '../Modal/modal.css'
 
-// {title, description, modal, modalLink1, modalLink1Title, modalLink2, modalLink2Title}
-
 function TechStack({title, description, modal, modalLink1, modalLink1Title, modalLink2, modalLink2Title}) {
   const [modalShow, setModalShow] = useState(false);
   const [modalContent, setModalContent] = useState('');
@@ -41,13 +39,13 @@ function TechStack({title, description, modal, modalLink1, modalLink1Title, moda
   function modalContents () {
     return (
       <div id="modal-content">
-        <Modal.Header closeButton>
+        <Modal.Header>
           <Modal.Title id="contained-modal-title-vcenter">
             <h2>{title}</h2>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h3>{modal}</h3>
+          <p>{modal}</p>
           {handleModalUrl()}
         </Modal.Body>
       </div>
