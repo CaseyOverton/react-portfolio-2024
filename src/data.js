@@ -68,15 +68,14 @@ export const USER_DATA = {
 export const TAB_CONTENT = {
     Resume: {
         title: 'Resume',
-        description1: 'to open my resume.',
-        url: '',
-        urlTitle: 'Click Here'
+        url: 'https://docs.google.com/document/d/154vYVnq_G7c-aWN_DpwvwUgwrZs4iOgiD0JW_IZvR-M/edit?usp=sharing',
+        urlTitle: 'Resume Link'
     },
     Contact: {
         title: 'Contact',
-        description1:'Email: Overtonc1@gmail.com, Linkedin: ',
+        description1:'Email: Overtonc1@gmail.com',
         url: 'https://www.linkedin.com/in/casey-overton-3584151b1/',
-        urlTitle: 'Linkedin'
+        urlTitle: 'Linkedin Link'
     },
     About: {
         title: 'About Me',

@@ -6,16 +6,37 @@ import { TAB_CONTENT } from './data.js'
 
 function App() {
   function isURL() {
-    if(TAB_CONTENT[selectedTopic].url) {
+    if(TAB_CONTENT[selectedTopic].title === 'Resume') {
       return (
-        <a href={TAB_CONTENT[selectedTopic].url}>{TAB_CONTENT[selectedTopic].urlTitle}</a>
+        <>
+          <a href={TAB_CONTENT[selectedTopic].url}>{TAB_CONTENT[selectedTopic].urlTitle}</a>
+        </>
+      )
+    }
+    if(TAB_CONTENT[selectedTopic].title === 'Contact') {
+      return (
+        <>
+          <p> {TAB_CONTENT[selectedTopic].description1}</p>
+          <a href={TAB_CONTENT[selectedTopic].url}>{TAB_CONTENT[selectedTopic].urlTitle}</a>
+        </>
+      )
+    }
+    if(TAB_CONTENT[selectedTopic].title === 'About Me') {
+      return (
+        <>
+          <p> {TAB_CONTENT[selectedTopic].description1}</p>
+          <p> {TAB_CONTENT[selectedTopic].description2}</p>
+        </>
       )
     }
   }
-  function isDescription2() {
-    if(TAB_CONTENT[selectedTopic].description2) {
+  function isResume() {
+    if(TAB_CONTENT[selectedTopic] == 'Resume') {
       return (
-        <p>{TAB_CONTENT[selectedTopic].description2}</p>
+        <>
+          <a href={TAB_CONTENT[selectedTopic].url}>{TAB_CONTENT[selectedTopic].urlTitle}</a>
+          <p>{TAB_CONTENT[selectedTopic].description1}</p>
+        </>
       )
     }
   }
@@ -28,7 +49,6 @@ function App() {
       <h2>
         {TAB_CONTENT[selectedTopic].title}
       </h2>
-      <p> {TAB_CONTENT[selectedTopic].description1}</p>
         {isURL()}
     </div>
   )
