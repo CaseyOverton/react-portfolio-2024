@@ -58,7 +58,7 @@ function App() {
       <Header />
       <main>
         <Carousels />
-        <section id="examples">
+        <section id="tabs">
           <menu>
             <TabButton 
               isSelected={selectedTopic === 'Resume'}
