@@ -80,6 +80,6 @@ export const TAB_CONTENT = {
     About: {
         title: 'About Me',
         description1: '2012-2017 East Carolina University',
-        description2: '2020-2021 University of Chapel Hill for Full Stack Development',
+        description2: '2020-2021 University of Carolina, Chapel Hill for Full Stack Development',
     },
 }
