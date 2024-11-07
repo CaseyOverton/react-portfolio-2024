@@ -1,8 +1,0 @@
-.embla__prev, .embla__next {
-    background: linear-gradient(#d9b8ee, #3c1775);
-    & svg {
-        height: 1rem;  
-    }
-}
-
-  
